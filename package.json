@@ -1,0 +1,36 @@
+{
+  "name": "twitter-scraper",
+  "version": "1.0.0",
+  "description": "Twitter/X scraper using Playwright - exports tweets to JSON/CSV",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "scrape:user": "tsx src/index.ts --user",
+    "scrape:search": "tsx src/index.ts --search",
+    "scrape:hashtag": "tsx src/index.ts --hashtag"
+  },
+  "keywords": [
+    "twitter",
+    "scraper",
+    "playwright",
+    "typescript"
+  ],
+  "author": "Alfredo",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.44.0",
+    "csv-writer": "^1.6.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "tsx": "^4.7.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

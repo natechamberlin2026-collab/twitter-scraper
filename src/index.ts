@@ -59,7 +59,7 @@ program
   .description('Scrape tweets from search results')
   .option('-m, --max <number>', 'Maximum tweets to scrape', String, defaultOptions.maxTweets.toString())
   .option('--headless', 'Run in headless mode', defaultOptions.headless)
-  .option('-o, --output <dir>', 'Output directory', defaultOptions.outputDir', defaultOptions.outputDir)
+  .option('-o, --output <dir>', 'Output directory', defaultOptions.outputDir, defaultOptions.outputDir)
   .option('-f, --format <type>', 'Output format (json|csv)', defaultOptions.outputFormat)
   .action(async (query, options) => {
     const opts = { ...defaultOptions, ...options, maxTweets: parseInt(options.max) };
